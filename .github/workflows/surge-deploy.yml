@@ -43,4 +43,4 @@ jobs:
         run: npm install -g surge
         
       - name: Run Surge
-        run: surge ./ reactapp001-wajid-surge.sh --token {{secrets.SURGE_TOKEN}}
+        run: surge ./build reactapp001-wajid-surge.sh/ --token ${{secrets.SURGE_TOKEN}}
